@@ -72,8 +72,20 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = import_path.default.join(process.cwd(), "dist");
-    app.use(import_express.default.static(distPath));
+    app.use("/assets", import_express.default.static(import_path.default.join(distPath, "assets"), {
+      immutable: true,
+      maxAge: "1y",
+      fallthrough: false
+    }));
+    app.use(import_express.default.static(distPath, {
+      setHeaders: (res, filePath) => {
+        if (import_path.default.basename(filePath) === "index.html") {
+          res.setHeader("Cache-Control", "no-store");
+        }
+      }
+    }));
     app.get("*", (req, res) => {
+      res.setHeader("Cache-Control", "no-store");
       res.sendFile(import_path.default.join(distPath, "index.html"));
     });
   }
