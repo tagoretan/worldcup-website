@@ -32,21 +32,6 @@
       "recommendedVolume": 0.28
     },
     {
-      "id": "main_stadium_football_soccer",
-      "file": "/assets/audio/music/main_stadium_football_soccer.mp3",
-      "title": "Stadium Football Soccer Music",
-      "author": "YevhenAstafiev",
-      "source": "Pixabay",
-      "sourceUrl": "https://pixabay.com/music/percussion-stadium-football-soccer-music-478711/",
-      "downloadedFrom": "https://cdn.pixabay.com/download/audio/2026/02/03/audio_c5aac091b3.mp3?filename=yevhenastafiev-stadium-football-soccer-music-478711.mp3",
-      "license": "Pixabay Content License",
-      "durationSeconds": 152,
-      "contentIdRegistered": true,
-      "usage": ["tournament", "pre_match", "world_cup_setup"],
-      "loop": true,
-      "recommendedVolume": 0.32
-    },
-    {
       "id": "story_dark_tension_atmosphere",
       "file": "/assets/audio/music/story_dark_tension_atmosphere.mp3",
       "title": "Dark Tension Atmosphere",
