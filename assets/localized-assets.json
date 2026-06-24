@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "prologue.forumMonitor",
+      "type": "image",
+      "containsBakedText": true,
+      "languagePolicy": "localized-variants",
+      "defaultPath": "assets/prologue/forum-monitor.webp",
+      "variants": {
+        "zh-CN": "assets/prologue/forum-monitor.webp",
+        "en-US": "assets/prologue/forum-monitor.en-US.webp"
+      },
+      "notes": "The forum monitor image contains baked UI text and uses per-language rendered variants."
+    },
+    {
+      "id": "cover.keyArt",
+      "type": "image",
+      "containsBakedText": false,
+      "languagePolicy": "shared",
+      "defaultPath": "assets/cover/final-whistle-protocol-key-art.webp"
+    }
+  ]
+}
